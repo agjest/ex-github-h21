@@ -1,16 +1,21 @@
 ---
 title: "Regression tables"
-output: html_notebook
+output:
+  pdf_document: default
+  word_document: default
+  html_notebook: default
+  html_document:
+    df_print: paged
+bibliography: references.bib
 ---
 
 ```{r setup}
 library(huxtable)
 ```
 
-
 A short example illustrating the use of regresssion tables.
 
-```{r sumamry}
+```{r summary}
 summary(mtcars)
 ```
 
@@ -19,6 +24,11 @@ lm1 <- lm(mpg ~ cyl, data = mtcars)
 lm2 <- lm(mpg ~ cyl + disp + hp, data = mtcars)
 lm3 <- lm(mpg ~ disp + gear + carb + am, data = mtcars)
 ```
+
+```{r summary-reg}
+summary(lm2)
+```
+
 
 ```{r report_stderror}
 huxreg(lm1, lm2, lm3)
@@ -34,7 +44,25 @@ huxreg(
 
 Suppose that we discover that the observations number 4 to 6, 13 and 17 should not be included.
 
+```{r reduced_model}
+lm1_red <- lm(mpg ~ cyl, 
+              data = mtcars[-c(4:6, 13, 17), ])
+lm2_red <- lm(mpg ~ cyl + disp + hp, 
+              data = mtcars[-c(4:6, 13, 17), ])
+lm3_red <- lm(mpg ~ disp + gear + carb + am, 
+              data = mtcars[-c(4:6, 13, 17), ])
+```
+
+```{r report_tvalue_red}
+huxreg(
+        lm3,  lm3_red, 
+        error_format = "[{statistic}]", 
+        note         = "{stars}. T statistics in brackets."
+      )
+```
+
 ```{r siste}
 #siste
 ```
 
+## References
