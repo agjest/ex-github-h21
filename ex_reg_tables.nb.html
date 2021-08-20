@@ -434,6 +434,17 @@ lm3_red &lt;- lm(mpg ~ disp + gear + carb + am, data = mtcars[-c(4:6, 13, 17), ]
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuaHV4cmVnKFxuICAgICAgICBsbTFfcmVkLCBsbTJfcmVkLCBsbTNfcmVkLCBcbiAgICAgICAgZXJyb3JfZm9ybWF0ID0gXCJbe3N0YXRpc3RpY31dXCIsIFxuICAgICAgICBub3RlICAgICAgICAgPSBcIntzdGFyc30uIFQgc3RhdGlzdGljcyBpbiBicmFja2V0cy5cIlxuICAgICAgKVxuYGBgIn0= -->
+<pre class="r"><code>huxreg(
+        lm1_red, lm2_red, lm3_red, 
+        error_format = &quot;[{statistic}]&quot;, 
+        note         = &quot;{stars}. T statistics in brackets.&quot;
+      )</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxuI3Npc3RlXG5gYGBcbmBgYCJ9 -->
 <pre class="r"><code>```r
 #siste</code></pre>
@@ -443,7 +454,7 @@ lm3_red &lt;- lm(mpg ~ disp + gear + carb + am, data = mtcars[-c(4:6, 13, 17), ]
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiUmVncmVzc2lvbiB0YWJsZXMiCm91dHB1dDogaHRtbF9ub3RlYm9vawotLS0KCmBgYHtyIHNldHVwfQpsaWJyYXJ5KGh1eHRhYmxlKQpgYGAKCgpBIHNob3J0IGV4YW1wbGUgaWxsdXN0cmF0aW5nIHRoZSB1c2Ugb2YgcmVncmVzc3Npb24gdGFibGVzLgoKYGBge3Igc3VtYW1yeX0Kc3VtbWFyeShtdGNhcnMpCmBgYAoKYGBge3IgbW9kZWxzfQpsbTEgPC0gbG0obXBnIH4gY3lsLCBkYXRhID0gbXRjYXJzKQpsbTIgPC0gbG0obXBnIH4gY3lsICsgZGlzcCArIGhwLCBkYXRhID0gbXRjYXJzKQpsbTMgPC0gbG0obXBnIH4gZGlzcCArIGdlYXIgKyBjYXJiICsgYW0sIGRhdGEgPSBtdGNhcnMpCmBgYAoKYGBge3IgcmVwb3J0X3N0ZGVycm9yfQpodXhyZWcobG0xLCBsbTIsIGxtMykKYGBgCgpgYGB7ciByZXBvcnRfdHZhbHVlfQpodXhyZWcoCiAgICAgICAgbG0xLCBsbTIsIGxtMywgCiAgICAgICAgZXJyb3JfZm9ybWF0ID0gIlt7c3RhdGlzdGljfV0iLCAKICAgICAgICBub3RlICAgICAgICAgPSAie3N0YXJzfS4gVCBzdGF0aXN0aWNzIGluIGJyYWNrZXRzLiIKICAgICAgKQpgYGAKClN1cHBvc2UgdGhhdCB3ZSBkaXNjb3ZlciB0aGF0IHRoZSBvYnNlcnZhdGlvbnMgbnVtYmVyIDQgdG8gNiwgMTMgYW5kIDE3IHNob3VsZCBub3QgYmUgaW5jbHVkZWQuCgpgYGB7ciByZWR1Y2VkX21vZGVsfQpsbTFfcmVkIDwtIGxtKG1wZyB+IGN5bCwgZGF0YSA9IG10Y2Fyc1stYyg0OjYsIDEzLCAxNyksIF0pCmxtMl9yZWQgPC0gbG0obXBnIH4gY3lsICsgZGlzcCArIGhwLCBkYXRhID0gbXRjYXJzWy1jKDQ6NiwgMTMsIDE3KSwgXSkKbG0zX3JlZCA8LSBsbShtcGcgfiBkaXNwICsgZ2VhciArIGNhcmIgKyBhbSwgZGF0YSA9IG10Y2Fyc1stYyg0OjYsIDEzLCAxNyksIF0pCmBgYAoKYGBge3Igc2lzdGV9CiNzaXN0ZQpgYGAKCg==</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiUmVncmVzc2lvbiB0YWJsZXMiCm91dHB1dDogaHRtbF9ub3RlYm9vawotLS0KCmBgYHtyIHNldHVwfQpsaWJyYXJ5KGh1eHRhYmxlKQpgYGAKCgpBIHNob3J0IGV4YW1wbGUgaWxsdXN0cmF0aW5nIHRoZSB1c2Ugb2YgcmVncmVzc3Npb24gdGFibGVzLgoKYGBge3Igc3VtYW1yeX0Kc3VtbWFyeShtdGNhcnMpCmBgYAoKYGBge3IgbW9kZWxzfQpsbTEgPC0gbG0obXBnIH4gY3lsLCBkYXRhID0gbXRjYXJzKQpsbTIgPC0gbG0obXBnIH4gY3lsICsgZGlzcCArIGhwLCBkYXRhID0gbXRjYXJzKQpsbTMgPC0gbG0obXBnIH4gZGlzcCArIGdlYXIgKyBjYXJiICsgYW0sIGRhdGEgPSBtdGNhcnMpCmBgYAoKYGBge3IgcmVwb3J0X3N0ZGVycm9yfQpodXhyZWcobG0xLCBsbTIsIGxtMykKYGBgCgpgYGB7ciByZXBvcnRfdHZhbHVlfQpodXhyZWcoCiAgICAgICAgbG0xLCBsbTIsIGxtMywgCiAgICAgICAgZXJyb3JfZm9ybWF0ID0gIlt7c3RhdGlzdGljfV0iLCAKICAgICAgICBub3RlICAgICAgICAgPSAie3N0YXJzfS4gVCBzdGF0aXN0aWNzIGluIGJyYWNrZXRzLiIKICAgICAgKQpgYGAKClN1cHBvc2UgdGhhdCB3ZSBkaXNjb3ZlciB0aGF0IHRoZSBvYnNlcnZhdGlvbnMgbnVtYmVyIDQgdG8gNiwgMTMgYW5kIDE3IHNob3VsZCBub3QgYmUgaW5jbHVkZWQuCgpgYGB7ciByZWR1Y2VkX21vZGVsfQpsbTFfcmVkIDwtIGxtKG1wZyB+IGN5bCwgZGF0YSA9IG10Y2Fyc1stYyg0OjYsIDEzLCAxNyksIF0pCmxtMl9yZWQgPC0gbG0obXBnIH4gY3lsICsgZGlzcCArIGhwLCBkYXRhID0gbXRjYXJzWy1jKDQ6NiwgMTMsIDE3KSwgXSkKbG0zX3JlZCA8LSBsbShtcGcgfiBkaXNwICsgZ2VhciArIGNhcmIgKyBhbSwgZGF0YSA9IG10Y2Fyc1stYyg0OjYsIDEzLCAxNyksIF0pCmBgYAoKYGBge3IgcmVwb3J0X3R2YWx1ZV9yZWR9Cmh1eHJlZygKICAgICAgICBsbTFfcmVkLCBsbTJfcmVkLCBsbTNfcmVkLCAKICAgICAgICBlcnJvcl9mb3JtYXQgPSAiW3tzdGF0aXN0aWN9XSIsIAogICAgICAgIG5vdGUgICAgICAgICA9ICJ7c3RhcnN9LiBUIHN0YXRpc3RpY3MgaW4gYnJhY2tldHMuIgogICAgICApCmBgYAoKYGBge3Igc2lzdGV9CiNzaXN0ZQpgYGAKCg==</div>
 
 
 

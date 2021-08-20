@@ -40,6 +40,14 @@ lm2_red <- lm(mpg ~ cyl + disp + hp, data = mtcars[-c(4:6, 13, 17), ])
 lm3_red <- lm(mpg ~ disp + gear + carb + am, data = mtcars[-c(4:6, 13, 17), ])
 ```
 
+```{r report_tvalue_red}
+huxreg(
+        lm1_red, lm2_red, lm3_red, 
+        error_format = "[{statistic}]", 
+        note         = "{stars}. T statistics in brackets."
+      )
+```
+
 ```{r siste}
 #siste
 ```
