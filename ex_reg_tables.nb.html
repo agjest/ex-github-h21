@@ -217,51 +217,216 @@ pre code {
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShodXh0YWJsZSlcbmBgYCJ9 -->
-<pre class="r"><code>library(huxtable)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<p>A short example illustrating the use of regresssion tables.</p>
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3VtbWFyeShtdGNhcnMpXG5gYGAifQ== -->
-<pre class="r"><code>summary(mtcars)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubG0xIDwtIGxtKG1wZyB+IGN5bCwgZGF0YSA9IG10Y2FycylcbmxtMiA8LSBsbShtcGcgfiBjeWwgKyBkaXNwICsgaHAsIGRhdGEgPSBtdGNhcnMpXG5sbTMgPC0gbG0obXBnIH4gZGlzcCArIGdlYXIgKyBjYXJiICsgYW0sIGRhdGEgPSBtdGNhcnMpXG5gYGAifQ== -->
-<pre class="r"><code>lm1 &lt;- lm(mpg ~ cyl, data = mtcars)
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxubGlicmFyeShodXh0YWJsZSlcbmBgYFxuYGBgIn0= -->
+<pre class="r"><code>```r
+library(huxtable)</code></pre>
+<pre><code>
+&lt;!-- rnb-source-end --&gt;
+
+&lt;!-- rnb-chunk-end --&gt;
+
+
+&lt;!-- rnb-text-begin --&gt;
+
+
+
+A short example illustrating the use of regresssion tables.
+
+
+&lt;!-- rnb-text-end --&gt;
+
+
+&lt;!-- rnb-chunk-begin --&gt;
+
+
+&lt;!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxuc3VtbWFyeShtdGNhcnMpXG5gYGBcbmBgYCJ9 --&gt;
+
+```r
+```r
+summary(mtcars)</code></pre>
+<pre><code>
+&lt;!-- rnb-source-end --&gt;
+
+&lt;!-- rnb-output-begin eyJkYXRhIjoiICAgICAgbXBnICAgICAgICAgICAgIGN5bCAgICAgICAgICAgICBkaXNwICAgICAgXG4gTWluLiAgIDoxMC40MCAgIE1pbi4gICA6NC4wMDAgICBNaW4uICAgOiA3MS4xICBcbiAxc3QgUXUuOjE1LjQzICAgMXN0IFF1Ljo0LjAwMCAgIDFzdCBRdS46MTIwLjggIFxuIE1lZGlhbiA6MTkuMjAgICBNZWRpYW4gOjYuMDAwICAgTWVkaWFuIDoxOTYuMyAgXG4gTWVhbiAgIDoyMC4wOSAgIE1lYW4gICA6Ni4xODggICBNZWFuICAgOjIzMC43ICBcbiAzcmQgUXUuOjIyLjgwICAgM3JkIFF1Ljo4LjAwMCAgIDNyZCBRdS46MzI2LjAgIFxuIE1heC4gICA6MzMuOTAgICBNYXguICAgOjguMDAwICAgTWF4LiAgIDo0NzIuMCAgXG4gICAgICAgaHAgICAgICAgICAgICAgZHJhdCAgICAgICAgICAgICB3dCAgICAgICBcbiBNaW4uICAgOiA1Mi4wICAgTWluLiAgIDoyLjc2MCAgIE1pbi4gICA6MS41MTMgIFxuIDFzdCBRdS46IDk2LjUgICAxc3QgUXUuOjMuMDgwICAgMXN0IFF1LjoyLjU4MSAgXG4gTWVkaWFuIDoxMjMuMCAgIE1lZGlhbiA6My42OTUgICBNZWRpYW4gOjMuMzI1ICBcbiBNZWFuICAgOjE0Ni43ICAgTWVhbiAgIDozLjU5NyAgIE1lYW4gICA6My4yMTcgIFxuIDNyZCBRdS46MTgwLjAgICAzcmQgUXUuOjMuOTIwICAgM3JkIFF1LjozLjYxMCAgXG4gTWF4LiAgIDozMzUuMCAgIE1heC4gICA6NC45MzAgICBNYXguICAgOjUuNDI0ICBcbiAgICAgIHFzZWMgICAgICAgICAgICAgdnMgICAgICAgICAgICAgICBhbSAgICAgICAgXG4gTWluLiAgIDoxNC41MCAgIE1pbi4gICA6MC4wMDAwICAgTWluLiAgIDowLjAwMDAgIFxuIDFzdCBRdS46MTYuODkgICAxc3QgUXUuOjAuMDAwMCAgIDFzdCBRdS46MC4wMDAwICBcbiBNZWRpYW4gOjE3LjcxICAgTWVkaWFuIDowLjAwMDAgICBNZWRpYW4gOjAuMDAwMCAgXG4gTWVhbiAgIDoxNy44NSAgIE1lYW4gICA6MC40Mzc1ICAgTWVhbiAgIDowLjQwNjIgIFxuIDNyZCBRdS46MTguOTAgICAzcmQgUXUuOjEuMDAwMCAgIDNyZCBRdS46MS4wMDAwICBcbiBNYXguICAgOjIyLjkwICAgTWF4LiAgIDoxLjAwMDAgICBNYXguICAgOjEuMDAwMCAgXG4gICAgICBnZWFyICAgICAgICAgICAgY2FyYiAgICAgIFxuIE1pbi4gICA6My4wMDAgICBNaW4uICAgOjEuMDAwICBcbiAxc3QgUXUuOjMuMDAwICAgMXN0IFF1LjoyLjAwMCAgXG4gTWVkaWFuIDo0LjAwMCAgIE1lZGlhbiA6Mi4wMDAgIFxuIE1lYW4gICA6My42ODggICBNZWFuICAgOjIuODEyICBcbiAzcmQgUXUuOjQuMDAwICAgM3JkIFF1Ljo0LjAwMCAgXG4gTWF4LiAgIDo1LjAwMCAgIE1heC4gICA6OC4wMDAgIFxuIn0= --&gt;
+</code></pre>
+<pre><code>  mpg             cyl             disp      </code></pre>
+<p>Min. :10.40 Min. :4.000 Min. : 71.1<br />
+1st Qu.:15.43 1st Qu.:4.000 1st Qu.:120.8<br />
+Median :19.20 Median :6.000 Median :196.3<br />
+Mean :20.09 Mean :6.188 Mean :230.7<br />
+3rd Qu.:22.80 3rd Qu.:8.000 3rd Qu.:326.0<br />
+Max. :33.90 Max. :8.000 Max. :472.0<br />
+hp drat wt<br />
+Min. : 52.0 Min. :2.760 Min. :1.513<br />
+1st Qu.: 96.5 1st Qu.:3.080 1st Qu.:2.581<br />
+Median :123.0 Median :3.695 Median :3.325<br />
+Mean :146.7 Mean :3.597 Mean :3.217<br />
+3rd Qu.:180.0 3rd Qu.:3.920 3rd Qu.:3.610<br />
+Max. :335.0 Max. :4.930 Max. :5.424<br />
+qsec vs am<br />
+Min. :14.50 Min. :0.0000 Min. :0.0000<br />
+1st Qu.:16.89 1st Qu.:0.0000 1st Qu.:0.0000<br />
+Median :17.71 Median :0.0000 Median :0.0000<br />
+Mean :17.85 Mean :0.4375 Mean :0.4062<br />
+3rd Qu.:18.90 3rd Qu.:1.0000 3rd Qu.:1.0000<br />
+Max. :22.90 Max. :1.0000 Max. :1.0000<br />
+gear carb<br />
+Min. :3.000 Min. :1.000<br />
+1st Qu.:3.000 1st Qu.:2.000<br />
+Median :4.000 Median :2.000<br />
+Mean :3.688 Mean :2.812<br />
+3rd Qu.:4.000 3rd Qu.:4.000<br />
+Max. :5.000 Max. :8.000</p>
+<pre><code>
+
+
+&lt;!-- rnb-output-end --&gt;
+
+&lt;!-- rnb-chunk-end --&gt;
+
+
+&lt;!-- rnb-text-begin --&gt;
+
+
+
+&lt;!-- rnb-text-end --&gt;
+
+
+&lt;!-- rnb-chunk-begin --&gt;
+
+
+&lt;!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxubG0xIDwtIGxtKG1wZyB+IGN5bCwgZGF0YSA9IG10Y2FycylcbmxtMiA8LSBsbShtcGcgfiBjeWwgKyBkaXNwICsgaHAsIGRhdGEgPSBtdGNhcnMpXG5sbTMgPC0gbG0obXBnIH4gZGlzcCArIGdlYXIgKyBjYXJiICsgYW0sIGRhdGEgPSBtdGNhcnMpXG5gYGBcbmBgYCJ9 --&gt;
+
+```r
+```r
+lm1 &lt;- lm(mpg ~ cyl, data = mtcars)
 lm2 &lt;- lm(mpg ~ cyl + disp + hp, data = mtcars)
 lm3 &lt;- lm(mpg ~ disp + gear + carb + am, data = mtcars)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuaHV4cmVnKGxtMSwgbG0yLCBsbTMpXG5gYGAifQ== -->
-<pre class="r"><code>huxreg(lm1, lm2, lm3)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuaHV4cmVnKFxuICAgICAgICBsbTEsIGxtMiwgbG0zLCBcbiAgICAgICAgZXJyb3JfZm9ybWF0ID0gXCJbe3N0YXRpc3RpY31dXCIsIFxuICAgICAgICBub3RlICAgICAgICAgPSBcIntzdGFyc30uIFQgc3RhdGlzdGljcyBpbiBicmFja2V0cy5cIlxuICAgICAgKVxuYGBgIn0= -->
-<pre class="r"><code>huxreg(
+<pre><code>
+&lt;!-- rnb-source-end --&gt;
+
+&lt;!-- rnb-chunk-end --&gt;
+
+
+&lt;!-- rnb-text-begin --&gt;
+
+
+
+&lt;!-- rnb-text-end --&gt;
+
+
+&lt;!-- rnb-chunk-begin --&gt;
+
+
+&lt;!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxuaHV4cmVnKGxtMSwgbG0yLCBsbTMpXG5gYGBcbmBgYCJ9 --&gt;
+
+```r
+```r
+huxreg(lm1, lm2, lm3)</code></pre>
+<pre><code>
+&lt;!-- rnb-source-end --&gt;
+
+&lt;!-- rnb-output-begin eyJkYXRhIjoiICAg4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSAXG4gICAgICAgICAgICAgICAgICAgICAgICgxKSAgICAgICAgICAgKDIpICAgICAgICAgICAoMykgICAgICBcbiAgICAgICAgICAgICAgICAg4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSAXG4gICAgIChJbnRlcmNlcHQpICAgIDM3Ljg4NSAqKiogICAgMzQuMTg1ICoqKiAgICAyMy4zMTkgKioqICBcbiAgICAgICAgICAgICAgICAgICAgKDIuMDc0KcKgwqDCoCAgICAoMi41OTEpwqDCoMKgICAgICg0LjYyNinCoMKgwqAgIFxuICAgICBjeWwgICAgICAgICAgICAtMi44NzYgKioqICAgIC0xLjIyN8KgwqDCoMKgICAgICAgwqDCoMKgwqDCoMKgwqDCoCAgXG4gICAgICAgICAgICAgICAgICAgICgwLjMyMinCoMKgwqAgICAgKDAuNzk3KcKgwqDCoCAgICAgIMKgwqDCoMKgwqDCoMKgwqAgIFxuICAgICBkaXNwICAgICAgICAgICAgIMKgwqDCoMKgwqDCoMKgwqAgICAgLTAuMDE5wqDCoMKgwqAgICAgLTAuMDIyICoqwqAgIFxuICAgICAgICAgICAgICAgICAgICAgIMKgwqDCoMKgwqDCoMKgwqAgICAgKDAuMDEwKcKgwqDCoCAgICAoMC4wMDYpwqDCoMKgICBcbiAgICAgaHAgICAgICAgICAgICAgICDCoMKgwqDCoMKgwqDCoMKgICAgIC0wLjAxNcKgwqDCoMKgICAgICAgwqDCoMKgwqDCoMKgwqDCoCAgXG4gICAgICAgICAgICAgICAgICAgICAgwqDCoMKgwqDCoMKgwqDCoCAgICAoMC4wMTUpwqDCoMKgICAgICAgwqDCoMKgwqDCoMKgwqDCoCAgXG4gICAgIGdlYXIgICAgICAgICAgICAgwqDCoMKgwqDCoMKgwqDCoCAgICAgIMKgwqDCoMKgwqDCoMKgwqAgICAgIDEuNDMxwqDCoMKgwqAgIFxuICAgICAgICAgICAgICAgICAgICAgIMKgwqDCoMKgwqDCoMKgwqAgICAgICDCoMKgwqDCoMKgwqDCoMKgICAgICgxLjI4OSnCoMKgwqAgIFxuICAgICBjYXJiICAgICAgICAgICAgIMKgwqDCoMKgwqDCoMKgwqAgICAgICDCoMKgwqDCoMKgwqDCoMKgICAgIC0xLjYyMiAqKiogIFxuICAgICAgICAgICAgICAgICAgICAgIMKgwqDCoMKgwqDCoMKgwqAgICAgICDCoMKgwqDCoMKgwqDCoMKgICAgICgwLjQxNynCoMKgwqAgIFxuICAgICBhbSAgICAgICAgICAgICAgIMKgwqDCoMKgwqDCoMKgwqAgICAgICDCoMKgwqDCoMKgwqDCoMKgICAgICAyLjY2OcKgwqDCoMKgICBcbiAgICAgICAgICAgICAgICAgICAgICDCoMKgwqDCoMKgwqDCoMKgICAgICAgwqDCoMKgwqDCoMKgwqDCoCAgICAoMS42MzEpwqDCoMKgICBcbiAgICAgICAgICAgICAgICAg4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSAXG4gICAgIE4gICAgICAgICAgICAgIDMywqDCoMKgwqDCoMKgwqDCoCAgICAzMsKgwqDCoMKgwqDCoMKgwqAgICAgMzLCoMKgwqDCoMKgwqDCoMKgICBcbiAgICAgUjIgICAgICAgICAgICAgIDAuNzI2wqDCoMKgwqAgICAgIDAuNzY4wqDCoMKgwqAgICAgIDAuODM2wqDCoMKgwqAgIFxuICAgICBsb2dMaWsgICAgICAgIC04MS42NTPCoMKgwqDCoCAgIC03OS4wMDnCoMKgwqDCoCAgIC03My40NzPCoMKgwqDCoCAgXG4gICAgIEFJQyAgICAgICAgICAgMTY5LjMwNsKgwqDCoMKgICAgMTY4LjAxOMKgwqDCoMKgICAgMTU4Ljk0NsKgwqDCoMKgICBcbiAgIOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgFxuICAgICAqKiogcCA8IDAuMDAxOyAqKiBwIDwgMC4wMTsgKiBwIDwgMC4wNS4gICAgICAgICAgICAgICAgXG5cbkNvbHVtbiBuYW1lczogbmFtZXMsIG1vZGVsMSwgbW9kZWwyLCBtb2RlbDNcbiJ9 --&gt;
+</code></pre>
+<p>───────────────────────────────────────────────────────── (1) (2) (3)<br />
+─────────────────────────────────────────── (Intercept) 37.885 *** 34.185 *** 23.319 ***<br />
+(2.074)    (2.591)    (4.626)   <br />
+cyl -2.876 *** -1.227             <br />
+(0.322)    (0.797)            <br />
+disp          -0.019     -0.022 <strong> <br />
+         (0.010)    (0.006)   <br />
+hp          -0.015             <br />
+         (0.015)            <br />
+gear                   1.431    <br />
+                  (1.289)   <br />
+carb                   -1.622 </strong>*<br />
+                  (0.417)   <br />
+am                   2.669    <br />
+                  (1.631)   <br />
+─────────────────────────────────────────── N 32         32         32        <br />
+R2 0.726     0.768     0.836    <br />
+logLik -81.653     -79.009     -73.473    <br />
+AIC 169.306     168.018     158.946    <br />
+───────────────────────────────────────────────────────── *** p &lt; 0.001; ** p &lt; 0.01; * p &lt; 0.05.</p>
+<p>Column names: names, model1, model2, model3</p>
+<pre><code>
+
+
+&lt;!-- rnb-output-end --&gt;
+
+&lt;!-- rnb-chunk-end --&gt;
+
+
+&lt;!-- rnb-text-begin --&gt;
+
+
+
+&lt;!-- rnb-text-end --&gt;
+
+
+&lt;!-- rnb-chunk-begin --&gt;
+
+
+&lt;!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxuaHV4cmVnKFxuICAgICAgICBsbTEsIGxtMiwgbG0zLCBcbiAgICAgICAgZXJyb3JfZm9ybWF0ID0gXFxbe3N0YXRpc3RpY31dXFwsIFxuICAgICAgICBub3RlICAgICAgICAgPSBcXHtzdGFyc30uIFQgc3RhdGlzdGljcyBpbiBicmFja2V0cy5cXFxuICAgICAgKVxuYGBgXG5gYGAifQ== --&gt;
+
+```r
+```r
+huxreg(
         lm1, lm2, lm3, 
-        error_format = &quot;[{statistic}]&quot;, 
-        note         = &quot;{stars}. T statistics in brackets.&quot;
+        error_format = \[{statistic}]\, 
+        note         = \{stars}. T statistics in brackets.\
       )</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<p>Suppose that we discover that the observations number 4 to 6, 13 and 17 should not be included.</p>
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubG0xX3JlZCA8LSBsbShtcGcgfiBjeWwsIGRhdGEgPSBtdGNhcnNbLWMoNDo2LCAxMywgMTcpLCBdKVxubG0yX3JlZCA8LSBsbShtcGcgfiBjeWwgKyBkaXNwICsgaHAsIGRhdGEgPSBtdGNhcnNbLWMoNDo2LCAxMywgMTcpLCBdKVxubG0zX3JlZCA8LSBsbShtcGcgfiBkaXNwICsgZ2VhciArIGNhcmIgKyBhbSwgZGF0YSA9IG10Y2Fyc1stYyg0OjYsIDEzLCAxNyksIF0pXG5gYGAifQ== -->
-<pre class="r"><code>lm1_red &lt;- lm(mpg ~ cyl, data = mtcars[-c(4:6, 13, 17), ])
+<pre><code>
+&lt;!-- rnb-source-end --&gt;
+
+&lt;!-- rnb-output-begin eyJkYXRhIjoiIOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgFxuICAgICAgICAgICAgICAgICAgICAgICgxKSAgICAgICAgICAgICgyKSAgICAgICAgICAgICgzKSAgICAgICBcbiAgICAgICAgICAgICAgICDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIBcbiAgIChJbnRlcmNlcHQpICAgICAgMzcuODg1ICoqKiAgICAgMzQuMTg1ICoqKiAgICAgMjMuMzE5ICoqKiAgXG4gICAgICAgICAgICAgICAgICAgWzE4LjI2OF3CoMKgwqAgICAgWzEzLjE5NV3CoMKgwqAgICAgIFs1LjA0MV3CoMKgwqAgIFxuICAgY3lsICAgICAgICAgICAgICAtMi44NzYgKioqICAgICAtMS4yMjfCoMKgwqDCoCAgICAgICDCoMKgwqDCoMKgwqDCoMKgICBcbiAgICAgICAgICAgICAgICAgICBbLTguOTIwXcKgwqDCoCAgICBbLTEuNTQwXcKgwqDCoCAgICAgICDCoMKgwqDCoMKgwqDCoMKgICBcbiAgIGRpc3AgICAgICAgICAgICAgICDCoMKgwqDCoMKgwqDCoMKgICAgICAtMC4wMTnCoMKgwqDCoCAgICAgLTAuMDIyICoqwqAgIFxuICAgICAgICAgICAgICAgICAgICAgIMKgwqDCoMKgwqDCoMKgwqAgICAgWy0xLjgxMV3CoMKgwqAgICAgWy0zLjQzOV3CoMKgwqAgIFxuICAgaHAgICAgICAgICAgICAgICAgIMKgwqDCoMKgwqDCoMKgwqAgICAgIC0wLjAxNcKgwqDCoMKgICAgICAgIMKgwqDCoMKgwqDCoMKgwqAgIFxuICAgICAgICAgICAgICAgICAgICAgIMKgwqDCoMKgwqDCoMKgwqAgICAgWy0xLjAwMl3CoMKgwqAgICAgICAgwqDCoMKgwqDCoMKgwqDCoCAgXG4gICBnZWFyICAgICAgICAgICAgICAgwqDCoMKgwqDCoMKgwqDCoCAgICAgICDCoMKgwqDCoMKgwqDCoMKgICAgICAgMS40MzHCoMKgwqDCoCAgXG4gICAgICAgICAgICAgICAgICAgICAgwqDCoMKgwqDCoMKgwqDCoCAgICAgICDCoMKgwqDCoMKgwqDCoMKgICAgICBbMS4xMDldwqDCoMKgICBcbiAgIGNhcmIgICAgICAgICAgICAgICDCoMKgwqDCoMKgwqDCoMKgICAgICAgIMKgwqDCoMKgwqDCoMKgwqAgICAgIC0xLjYyMiAqKiogIFxuICAgICAgICAgICAgICAgICAgICAgIMKgwqDCoMKgwqDCoMKgwqAgICAgICAgwqDCoMKgwqDCoMKgwqDCoCAgICBbLTMuODg4XcKgwqDCoCAgXG4gICBhbSAgICAgICAgICAgICAgICAgwqDCoMKgwqDCoMKgwqDCoCAgICAgICDCoMKgwqDCoMKgwqDCoMKgICAgICAgMi42NjnCoMKgwqDCoCAgXG4gICAgICAgICAgICAgICAgICAgICAgwqDCoMKgwqDCoMKgwqDCoCAgICAgICDCoMKgwqDCoMKgwqDCoMKgICAgICBbMS42MzZdwqDCoMKgICBcbiAgICAgICAgICAgICAgICDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIBcbiAgIE4gICAgICAgICAgICAgICAgMzLCoMKgwqDCoMKgwqDCoMKgICAgICAzMsKgwqDCoMKgwqDCoMKgwqAgICAgIDMywqDCoMKgwqDCoMKgwqDCoCAgXG4gICBSMiAgICAgICAgICAgICAgICAwLjcyNsKgwqDCoMKgICAgICAgMC43NjjCoMKgwqDCoCAgICAgIDAuODM2wqDCoMKgwqAgIFxuICAgbG9nTGlrICAgICAgICAgIC04MS42NTPCoMKgwqDCoCAgICAtNzkuMDA5wqDCoMKgwqAgICAgLTczLjQ3M8KgwqDCoMKgICBcbiAgIEFJQyAgICAgICAgICAgICAxNjkuMzA2wqDCoMKgwqAgICAgMTY4LjAxOMKgwqDCoMKgICAgIDE1OC45NDbCoMKgwqDCoCAgXG4g4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSAXG4gICAqKiogcCA8IDAuMDAxOyAqKiBwIDwgMC4wMTsgKiBwIDwgMC4wNS4gVCAgICAgICAgICAgICAgICAgIFxuICAgc3RhdGlzdGljcyBpbiBicmFja2V0cy4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcblxuQ29sdW1uIG5hbWVzOiBuYW1lcywgbW9kZWwxLCBtb2RlbDIsIG1vZGVsM1xuIn0= --&gt;
+</code></pre>
+<p>───────────────────────────────────────────────────────────── (1) (2) (3)<br />
+────────────────────────────────────────────── (Intercept) 37.885 *** 34.185 *** 23.319 ***<br />
+[18.268]    [13.195]    [5.041]   <br />
+cyl -2.876 *** -1.227             <br />
+[-8.920]    [-1.540]            <br />
+disp          -0.019     -0.022 <strong> <br />
+         [-1.811]    [-3.439]   <br />
+hp          -0.015             <br />
+         [-1.002]            <br />
+gear                   1.431    <br />
+                  [1.109]   <br />
+carb                   -1.622 </strong>*<br />
+                  [-3.888]   <br />
+am                   2.669    <br />
+                  [1.636]   <br />
+────────────────────────────────────────────── N 32         32         32        <br />
+R2 0.726     0.768     0.836    <br />
+logLik -81.653     -79.009     -73.473    <br />
+AIC 169.306     168.018     158.946    <br />
+───────────────────────────────────────────────────────────── *** p &lt; 0.001; ** p &lt; 0.01; * p &lt; 0.05. T<br />
+statistics in brackets.</p>
+<p>Column names: names, model1, model2, model3</p>
+<pre><code>
+
+
+&lt;!-- rnb-output-end --&gt;
+
+&lt;!-- rnb-chunk-end --&gt;
+
+
+&lt;!-- rnb-text-begin --&gt;
+
+
+Suppose that we discover that the observations number 4 to 6, 13 and 17 should not be included.
+
+
+&lt;!-- rnb-text-end --&gt;
+
+
+&lt;!-- rnb-chunk-begin --&gt;
+
+
+&lt;!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubG0xX3JlZCA8LSBsbShtcGcgfiBjeWwsIGRhdGEgPSBtdGNhcnNbLWMoNDo2LCAxMywgMTcpLCBdKVxubG0yX3JlZCA8LSBsbShtcGcgfiBjeWwgKyBkaXNwICsgaHAsIGRhdGEgPSBtdGNhcnNbLWMoNDo2LCAxMywgMTcpLCBdKVxubG0zX3JlZCA8LSBsbShtcGcgfiBkaXNwICsgZ2VhciArIGNhcmIgKyBhbSwgZGF0YSA9IG10Y2Fyc1stYyg0OjYsIDEzLCAxNyksIF0pXG5gYGAifQ== --&gt;
+
+```r
+lm1_red &lt;- lm(mpg ~ cyl, data = mtcars[-c(4:6, 13, 17), ])
 lm2_red &lt;- lm(mpg ~ cyl + disp + hp, data = mtcars[-c(4:6, 13, 17), ])
 lm3_red &lt;- lm(mpg ~ disp + gear + carb + am, data = mtcars[-c(4:6, 13, 17), ])</code></pre>
 <!-- rnb-source-end -->
@@ -269,25 +434,16 @@ lm3_red &lt;- lm(mpg ~ disp + gear + carb + am, data = mtcars[-c(4:6, 13, 17), ]
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuaHV4cmVnKFxuICAgICAgICBsbTFfcmVkLCBsbTJfcmVkLCBsbTNfcmVkLCBcbiAgICAgICAgZXJyb3JfZm9ybWF0ID0gXCJbe3N0YXRpc3RpY31dXCIsIFxuICAgICAgICBub3RlICAgICAgICAgPSBcIntzdGFyc30uIFQgc3RhdGlzdGljcyBpbiBicmFja2V0cy5cIlxuICAgICAgKVxuYGBgIn0= -->
-<pre class="r"><code>huxreg(
-        lm1_red, lm2_red, lm3_red, 
-        error_format = &quot;[{statistic}]&quot;, 
-        note         = &quot;{stars}. T statistics in brackets.&quot;
-      )</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuI3Npc3RlXG5gYGAifQ== -->
-<pre class="r"><code>#siste</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxuI3Npc3RlXG5gYGBcbmBgYCJ9 -->
+<pre class="r"><code>```r
+#siste</code></pre>
+<p>```</p>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiUmVncmVzc2lvbiB0YWJsZXMiCm91dHB1dDogaHRtbF9ub3RlYm9vawotLS0KCmBgYHtyIHNldHVwfQpsaWJyYXJ5KGh1eHRhYmxlKQpgYGAKCgpBIHNob3J0IGV4YW1wbGUgaWxsdXN0cmF0aW5nIHRoZSB1c2Ugb2YgcmVncmVzc3Npb24gdGFibGVzLgoKYGBge3Igc3VtYW1yeX0Kc3VtbWFyeShtdGNhcnMpCmBgYAoKYGBge3IgbW9kZWxzfQpsbTEgPC0gbG0obXBnIH4gY3lsLCBkYXRhID0gbXRjYXJzKQpsbTIgPC0gbG0obXBnIH4gY3lsICsgZGlzcCArIGhwLCBkYXRhID0gbXRjYXJzKQpsbTMgPC0gbG0obXBnIH4gZGlzcCArIGdlYXIgKyBjYXJiICsgYW0sIGRhdGEgPSBtdGNhcnMpCmBgYAoKYGBge3IgcmVwb3J0X3N0ZGVycm9yfQpodXhyZWcobG0xLCBsbTIsIGxtMykKYGBgCgpgYGB7ciByZXBvcnRfdHZhbHVlfQpodXhyZWcoCiAgICAgICAgbG0xLCBsbTIsIGxtMywgCiAgICAgICAgZXJyb3JfZm9ybWF0ID0gIlt7c3RhdGlzdGljfV0iLCAKICAgICAgICBub3RlICAgICAgICAgPSAie3N0YXJzfS4gVCBzdGF0aXN0aWNzIGluIGJyYWNrZXRzLiIKICAgICAgKQpgYGAKClN1cHBvc2UgdGhhdCB3ZSBkaXNjb3ZlciB0aGF0IHRoZSBvYnNlcnZhdGlvbnMgbnVtYmVyIDQgdG8gNiwgMTMgYW5kIDE3IHNob3VsZCBub3QgYmUgaW5jbHVkZWQuCgpgYGB7ciByZWR1Y2VkX21vZGVsfQpsbTFfcmVkIDwtIGxtKG1wZyB+IGN5bCwgZGF0YSA9IG10Y2Fyc1stYyg0OjYsIDEzLCAxNyksIF0pCmxtMl9yZWQgPC0gbG0obXBnIH4gY3lsICsgZGlzcCArIGhwLCBkYXRhID0gbXRjYXJzWy1jKDQ6NiwgMTMsIDE3KSwgXSkKbG0zX3JlZCA8LSBsbShtcGcgfiBkaXNwICsgZ2VhciArIGNhcmIgKyBhbSwgZGF0YSA9IG10Y2Fyc1stYyg0OjYsIDEzLCAxNyksIF0pCmBgYAoKYGBge3IgcmVwb3J0X3R2YWx1ZV9yZWR9Cmh1eHJlZygKICAgICAgICBsbTFfcmVkLCBsbTJfcmVkLCBsbTNfcmVkLCAKICAgICAgICBlcnJvcl9mb3JtYXQgPSAiW3tzdGF0aXN0aWN9XSIsIAogICAgICAgIG5vdGUgICAgICAgICA9ICJ7c3RhcnN9LiBUIHN0YXRpc3RpY3MgaW4gYnJhY2tldHMuIgogICAgICApCmBgYAoKYGBge3Igc2lzdGV9CiNzaXN0ZQpgYGAKCg==</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiUmVncmVzc2lvbiB0YWJsZXMiCm91dHB1dDogaHRtbF9ub3RlYm9vawotLS0KCmBgYHtyIHNldHVwfQpsaWJyYXJ5KGh1eHRhYmxlKQpgYGAKCgpBIHNob3J0IGV4YW1wbGUgaWxsdXN0cmF0aW5nIHRoZSB1c2Ugb2YgcmVncmVzc3Npb24gdGFibGVzLgoKYGBge3Igc3VtYW1yeX0Kc3VtbWFyeShtdGNhcnMpCmBgYAoKYGBge3IgbW9kZWxzfQpsbTEgPC0gbG0obXBnIH4gY3lsLCBkYXRhID0gbXRjYXJzKQpsbTIgPC0gbG0obXBnIH4gY3lsICsgZGlzcCArIGhwLCBkYXRhID0gbXRjYXJzKQpsbTMgPC0gbG0obXBnIH4gZGlzcCArIGdlYXIgKyBjYXJiICsgYW0sIGRhdGEgPSBtdGNhcnMpCmBgYAoKYGBge3IgcmVwb3J0X3N0ZGVycm9yfQpodXhyZWcobG0xLCBsbTIsIGxtMykKYGBgCgpgYGB7ciByZXBvcnRfdHZhbHVlfQpodXhyZWcoCiAgICAgICAgbG0xLCBsbTIsIGxtMywgCiAgICAgICAgZXJyb3JfZm9ybWF0ID0gIlt7c3RhdGlzdGljfV0iLCAKICAgICAgICBub3RlICAgICAgICAgPSAie3N0YXJzfS4gVCBzdGF0aXN0aWNzIGluIGJyYWNrZXRzLiIKICAgICAgKQpgYGAKClN1cHBvc2UgdGhhdCB3ZSBkaXNjb3ZlciB0aGF0IHRoZSBvYnNlcnZhdGlvbnMgbnVtYmVyIDQgdG8gNiwgMTMgYW5kIDE3IHNob3VsZCBub3QgYmUgaW5jbHVkZWQuCgpgYGB7ciByZWR1Y2VkX21vZGVsfQpsbTFfcmVkIDwtIGxtKG1wZyB+IGN5bCwgZGF0YSA9IG10Y2Fyc1stYyg0OjYsIDEzLCAxNyksIF0pCmxtMl9yZWQgPC0gbG0obXBnIH4gY3lsICsgZGlzcCArIGhwLCBkYXRhID0gbXRjYXJzWy1jKDQ6NiwgMTMsIDE3KSwgXSkKbG0zX3JlZCA8LSBsbShtcGcgfiBkaXNwICsgZ2VhciArIGNhcmIgKyBhbSwgZGF0YSA9IG10Y2Fyc1stYyg0OjYsIDEzLCAxNyksIF0pCmBgYAoKYGBge3Igc2lzdGV9CiNzaXN0ZQpgYGAKCg==</div>
 
 
 
